@@ -1,0 +1,1330 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20263.26.1022.1645                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='58d227e98bb5b8afb2362b587fc68f82a44db4ad3a23e8f042be28e2336c370b' _.fcp.WorkbookFingerprinting.true...creator-author-id='58d227e98bb5b8afb2362b587fc68f82a44db4ad3a23e8f042be28e2336c370b' _.fcp.WorkbookFingerprinting.true...creator-license-type='free' _.fcp.WorkbookFingerprinting.true...creator-machine-id='902f61b3b7056adbdb5e88c28b123aaf9f931b8e7359e2c61ae2b16deb716ce3' _.fcp.WorkbookFingerprinting.true...license-type='free' _.fcp.WorkbookFingerprinting.true...machine-id='902f61b3b7056adbdb5e88c28b123aaf9f931b8e7359e2c61ae2b16deb716ce3' original-version='18.1' source-build='2026.3.0 (20263.26.1022.1645)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='01_monthly_kpi_summary' inline='true' name='federated.066tv3o0wn62je1c23j1a1yzr9a9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='01_monthly_kpi_summary' name='textscan.0fmnfq60u23wc20zs23yr1wkqcm5'>
+            <connection class='textscan' directory='C:/Users/ASUS/Desktop/olist-ecommerce-analytics/outputs/tableau_exports' filename='01_monthly_kpi_summary.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0fmnfq60u23wc20zs23yr1wkqcm5' name='01_monthly_kpi_summary.csv' table='[01_monthly_kpi_summary#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='year_month_str' ordinal='0' />
+            <column datatype='integer' name='order_year' ordinal='1' />
+            <column datatype='integer' name='order_month' ordinal='2' />
+            <column datatype='integer' name='total_orders' ordinal='3' />
+            <column datatype='integer' name='unique_customers' ordinal='4' />
+            <column datatype='real' name='product_revenue' ordinal='5' />
+            <column datatype='real' name='freight_revenue' ordinal='6' />
+            <column datatype='real' name='gross_revenue' ordinal='7' />
+            <column datatype='real' name='avg_order_value' ordinal='8' />
+            <column datatype='real' name='avg_delivery_days' ordinal='9' />
+            <column datatype='real' name='late_delivery_pct' ordinal='10' />
+            <column datatype='real' name='prev_month_revenue' ordinal='11' />
+            <column datatype='real' name='mom_revenue_growth_pct' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[01_monthly_kpi_summary.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year_month_str</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[year_month_str]</local-name>
+            <parent-name>[01_monthly_kpi_summary.csv]</parent-name>
+            <remote-alias>year_month_str</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[01_monthly_kpi_summary.csv_8148EDEE9D7346688BB03CA535E0B7CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[order_year]</local-name>
+            <parent-name>[01_monthly_kpi_summary.csv]</parent-name>
+            <remote-alias>order_year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01_monthly_kpi_summary.csv_8148EDEE9D7346688BB03CA535E0B7CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[order_month]</local-name>
+            <parent-name>[01_monthly_kpi_summary.csv]</parent-name>
+            <remote-alias>order_month</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01_monthly_kpi_summary.csv_8148EDEE9D7346688BB03CA535E0B7CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_orders</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_orders]</local-name>
+            <parent-name>[01_monthly_kpi_summary.csv]</parent-name>
+            <remote-alias>total_orders</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01_monthly_kpi_summary.csv_8148EDEE9D7346688BB03CA535E0B7CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unique_customers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[unique_customers]</local-name>
+            <parent-name>[01_monthly_kpi_summary.csv]</parent-name>
+            <remote-alias>unique_customers</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01_monthly_kpi_summary.csv_8148EDEE9D7346688BB03CA535E0B7CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[product_revenue]</local-name>
+            <parent-name>[01_monthly_kpi_summary.csv]</parent-name>
+            <remote-alias>product_revenue</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01_monthly_kpi_summary.csv_8148EDEE9D7346688BB03CA535E0B7CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>freight_revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[freight_revenue]</local-name>
+            <parent-name>[01_monthly_kpi_summary.csv]</parent-name>
+            <remote-alias>freight_revenue</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01_monthly_kpi_summary.csv_8148EDEE9D7346688BB03CA535E0B7CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gross_revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gross_revenue]</local-name>
+            <parent-name>[01_monthly_kpi_summary.csv]</parent-name>
+            <remote-alias>gross_revenue</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01_monthly_kpi_summary.csv_8148EDEE9D7346688BB03CA535E0B7CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_order_value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_order_value]</local-name>
+            <parent-name>[01_monthly_kpi_summary.csv]</parent-name>
+            <remote-alias>avg_order_value</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01_monthly_kpi_summary.csv_8148EDEE9D7346688BB03CA535E0B7CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_delivery_days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_delivery_days]</local-name>
+            <parent-name>[01_monthly_kpi_summary.csv]</parent-name>
+            <remote-alias>avg_delivery_days</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01_monthly_kpi_summary.csv_8148EDEE9D7346688BB03CA535E0B7CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>late_delivery_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[late_delivery_pct]</local-name>
+            <parent-name>[01_monthly_kpi_summary.csv]</parent-name>
+            <remote-alias>late_delivery_pct</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01_monthly_kpi_summary.csv_8148EDEE9D7346688BB03CA535E0B7CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prev_month_revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[prev_month_revenue]</local-name>
+            <parent-name>[01_monthly_kpi_summary.csv]</parent-name>
+            <remote-alias>prev_month_revenue</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01_monthly_kpi_summary.csv_8148EDEE9D7346688BB03CA535E0B7CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mom_revenue_growth_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mom_revenue_growth_pct]</local-name>
+            <parent-name>[01_monthly_kpi_summary.csv]</parent-name>
+            <remote-alias>mom_revenue_growth_pct</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01_monthly_kpi_summary.csv_8148EDEE9D7346688BB03CA535E0B7CD]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='01_monthly_kpi_summary.csv' datatype='table' name='[__tableau_internal_object_id__].[01_monthly_kpi_summary.csv_8148EDEE9D7346688BB03CA535E0B7CD]' role='measure' type='quantitative' />
+      <column caption='Avg Delivery Days' datatype='real' name='[avg_delivery_days]' role='measure' type='quantitative' />
+      <column caption='Avg Order Value' datatype='real' name='[avg_order_value]' role='measure' type='quantitative' />
+      <column caption='Freight Revenue' datatype='real' name='[freight_revenue]' role='measure' type='quantitative' />
+      <column caption='Gross Revenue' datatype='real' name='[gross_revenue]' role='measure' type='quantitative' />
+      <column caption='Late Delivery Pct' datatype='real' name='[late_delivery_pct]' role='measure' type='quantitative' />
+      <column caption='Mom Revenue Growth Pct' datatype='real' name='[mom_revenue_growth_pct]' role='measure' type='quantitative' />
+      <column caption='Order Month' datatype='integer' name='[order_month]' role='dimension' type='quantitative' />
+      <column caption='Order Year' datatype='integer' name='[order_year]' role='dimension' type='quantitative' />
+      <column caption='Prev Month Revenue' datatype='real' name='[prev_month_revenue]' role='measure' type='quantitative' />
+      <column caption='Product Revenue' datatype='real' name='[product_revenue]' role='measure' type='quantitative' />
+      <column caption='Total Orders' datatype='integer' name='[total_orders]' role='measure' type='quantitative' />
+      <column caption='Unique Customers' datatype='integer' name='[unique_customers]' role='measure' type='quantitative' />
+      <column caption='Year Month Str' datatype='string' name='[year_month_str]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='01_monthly_kpi_summary.csv' id='01_monthly_kpi_summary.csv_8148EDEE9D7346688BB03CA535E0B7CD'>
+            <properties context=''>
+              <relation connection='textscan.0fmnfq60u23wc20zs23yr1wkqcm5' name='01_monthly_kpi_summary.csv' table='[01_monthly_kpi_summary#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='year_month_str' ordinal='0' />
+                  <column datatype='integer' name='order_year' ordinal='1' />
+                  <column datatype='integer' name='order_month' ordinal='2' />
+                  <column datatype='integer' name='total_orders' ordinal='3' />
+                  <column datatype='integer' name='unique_customers' ordinal='4' />
+                  <column datatype='real' name='product_revenue' ordinal='5' />
+                  <column datatype='real' name='freight_revenue' ordinal='6' />
+                  <column datatype='real' name='gross_revenue' ordinal='7' />
+                  <column datatype='real' name='avg_order_value' ordinal='8' />
+                  <column datatype='real' name='avg_delivery_days' ordinal='9' />
+                  <column datatype='real' name='late_delivery_pct' ordinal='10' />
+                  <column datatype='real' name='prev_month_revenue' ordinal='11' />
+                  <column datatype='real' name='mom_revenue_growth_pct' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='03_state_logistics_performance' inline='true' name='federated.02eszqk0jefv161f7hnzn0a0njzl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='03_state_logistics_performance' name='textscan.1h4mj891lpxryy13hz3p30xragzq'>
+            <connection class='textscan' directory='C:/Users/ASUS/Desktop/olist-ecommerce-analytics/outputs/tableau_exports' filename='03_state_logistics_performance.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1h4mj891lpxryy13hz3p30xragzq' name='03_state_logistics_performance.csv' table='[03_state_logistics_performance#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='customer_state' ordinal='0' />
+            <column datatype='integer' name='total_orders' ordinal='1' />
+            <column datatype='integer' name='unique_customers' ordinal='2' />
+            <column datatype='real' name='product_revenue' ordinal='3' />
+            <column datatype='real' name='freight_revenue' ordinal='4' />
+            <column datatype='real' name='freight_ratio_pct' ordinal='5' />
+            <column datatype='real' name='avg_delivery_days' ordinal='6' />
+            <column datatype='real' name='avg_estimated_days' ordinal='7' />
+            <column datatype='real' name='late_delivery_pct' ordinal='8' />
+            <column datatype='real' name='avg_review_score' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[03_state_logistics_performance.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_state]</local-name>
+            <parent-name>[03_state_logistics_performance.csv]</parent-name>
+            <remote-alias>customer_state</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[03_state_logistics_performance.csv_EFC9DD121DED47828436A541C6E2AE35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_orders</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_orders]</local-name>
+            <parent-name>[03_state_logistics_performance.csv]</parent-name>
+            <remote-alias>total_orders</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[03_state_logistics_performance.csv_EFC9DD121DED47828436A541C6E2AE35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unique_customers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[unique_customers]</local-name>
+            <parent-name>[03_state_logistics_performance.csv]</parent-name>
+            <remote-alias>unique_customers</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[03_state_logistics_performance.csv_EFC9DD121DED47828436A541C6E2AE35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[product_revenue]</local-name>
+            <parent-name>[03_state_logistics_performance.csv]</parent-name>
+            <remote-alias>product_revenue</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[03_state_logistics_performance.csv_EFC9DD121DED47828436A541C6E2AE35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>freight_revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[freight_revenue]</local-name>
+            <parent-name>[03_state_logistics_performance.csv]</parent-name>
+            <remote-alias>freight_revenue</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[03_state_logistics_performance.csv_EFC9DD121DED47828436A541C6E2AE35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>freight_ratio_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[freight_ratio_pct]</local-name>
+            <parent-name>[03_state_logistics_performance.csv]</parent-name>
+            <remote-alias>freight_ratio_pct</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[03_state_logistics_performance.csv_EFC9DD121DED47828436A541C6E2AE35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_delivery_days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_delivery_days]</local-name>
+            <parent-name>[03_state_logistics_performance.csv]</parent-name>
+            <remote-alias>avg_delivery_days</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[03_state_logistics_performance.csv_EFC9DD121DED47828436A541C6E2AE35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_estimated_days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_estimated_days]</local-name>
+            <parent-name>[03_state_logistics_performance.csv]</parent-name>
+            <remote-alias>avg_estimated_days</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[03_state_logistics_performance.csv_EFC9DD121DED47828436A541C6E2AE35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>late_delivery_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[late_delivery_pct]</local-name>
+            <parent-name>[03_state_logistics_performance.csv]</parent-name>
+            <remote-alias>late_delivery_pct</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[03_state_logistics_performance.csv_EFC9DD121DED47828436A541C6E2AE35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_review_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_review_score]</local-name>
+            <parent-name>[03_state_logistics_performance.csv]</parent-name>
+            <remote-alias>avg_review_score</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[03_state_logistics_performance.csv_EFC9DD121DED47828436A541C6E2AE35]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='03_state_logistics_performance.csv' datatype='table' name='[__tableau_internal_object_id__].[03_state_logistics_performance.csv_EFC9DD121DED47828436A541C6E2AE35]' role='measure' type='quantitative' />
+      <column caption='Avg Delivery Days' datatype='real' name='[avg_delivery_days]' role='measure' type='quantitative' />
+      <column caption='Avg Estimated Days' datatype='real' name='[avg_estimated_days]' role='measure' type='quantitative' />
+      <column caption='Avg Review Score' datatype='real' name='[avg_review_score]' role='measure' type='quantitative' />
+      <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Freight Ratio Pct' datatype='real' name='[freight_ratio_pct]' role='measure' type='quantitative' />
+      <column caption='Freight Revenue' datatype='real' name='[freight_revenue]' role='measure' type='quantitative' />
+      <column caption='Late Delivery Pct' datatype='real' name='[late_delivery_pct]' role='measure' type='quantitative' />
+      <column caption='Product Revenue' datatype='real' name='[product_revenue]' role='measure' type='quantitative' />
+      <column caption='Total Orders' datatype='integer' name='[total_orders]' role='measure' type='quantitative' />
+      <column caption='Unique Customers' datatype='integer' name='[unique_customers]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brazil&quot;' />
+        <semantic-value key='[State].[Name]' value='%null%' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='03_state_logistics_performance.csv' id='03_state_logistics_performance.csv_EFC9DD121DED47828436A541C6E2AE35'>
+            <properties context=''>
+              <relation connection='textscan.1h4mj891lpxryy13hz3p30xragzq' name='03_state_logistics_performance.csv' table='[03_state_logistics_performance#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='customer_state' ordinal='0' />
+                  <column datatype='integer' name='total_orders' ordinal='1' />
+                  <column datatype='integer' name='unique_customers' ordinal='2' />
+                  <column datatype='real' name='product_revenue' ordinal='3' />
+                  <column datatype='real' name='freight_revenue' ordinal='4' />
+                  <column datatype='real' name='freight_ratio_pct' ordinal='5' />
+                  <column datatype='real' name='avg_delivery_days' ordinal='6' />
+                  <column datatype='real' name='avg_estimated_days' ordinal='7' />
+                  <column datatype='real' name='late_delivery_pct' ordinal='8' />
+                  <column datatype='real' name='avg_review_score' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='02_customer_rfm_segments' inline='true' name='federated.0vrfsxl1b1n77s1fdq4gb0pvfrzq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='02_customer_rfm_segments' name='textscan.1yics9q17fmvn815pktan02da8q3'>
+            <connection class='textscan' directory='C:/Users/ASUS/Desktop/olist-ecommerce-analytics/outputs/tableau_exports' filename='02_customer_rfm_segments.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1yics9q17fmvn815pktan02da8q3' name='02_customer_rfm_segments.csv' table='[02_customer_rfm_segments#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='customer_unique_id' ordinal='0' />
+            <column datatype='string' name='customer_state' ordinal='1' />
+            <column datatype='string' name='customer_city' ordinal='2' />
+            <column datatype='datetime' name='first_purchase_date' ordinal='3' />
+            <column datatype='datetime' name='last_purchase_date' ordinal='4' />
+            <column datatype='integer' name='recency_days' ordinal='5' />
+            <column datatype='integer' name='frequency' ordinal='6' />
+            <column datatype='real' name='monetary' ordinal='7' />
+            <column datatype='real' name='avg_item_spend' ordinal='8' />
+            <column datatype='integer' name='r_score' ordinal='9' />
+            <column datatype='integer' name='f_score' ordinal='10' />
+            <column datatype='integer' name='m_score' ordinal='11' />
+            <column datatype='integer' name='rfm_code' ordinal='12' />
+            <column datatype='string' name='rfm_segment' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[02_customer_rfm_segments.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_unique_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_unique_id]</local-name>
+            <parent-name>[02_customer_rfm_segments.csv]</parent-name>
+            <remote-alias>customer_unique_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[02_customer_rfm_segments.csv_732FE2ACBCBF4D7B818B0DD928940778]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_state]</local-name>
+            <parent-name>[02_customer_rfm_segments.csv]</parent-name>
+            <remote-alias>customer_state</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[02_customer_rfm_segments.csv_732FE2ACBCBF4D7B818B0DD928940778]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_city]</local-name>
+            <parent-name>[02_customer_rfm_segments.csv]</parent-name>
+            <remote-alias>customer_city</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[02_customer_rfm_segments.csv_732FE2ACBCBF4D7B818B0DD928940778]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>first_purchase_date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[first_purchase_date]</local-name>
+            <parent-name>[02_customer_rfm_segments.csv]</parent-name>
+            <remote-alias>first_purchase_date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[02_customer_rfm_segments.csv_732FE2ACBCBF4D7B818B0DD928940778]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_purchase_date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[last_purchase_date]</local-name>
+            <parent-name>[02_customer_rfm_segments.csv]</parent-name>
+            <remote-alias>last_purchase_date</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[02_customer_rfm_segments.csv_732FE2ACBCBF4D7B818B0DD928940778]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recency_days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[recency_days]</local-name>
+            <parent-name>[02_customer_rfm_segments.csv]</parent-name>
+            <remote-alias>recency_days</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[02_customer_rfm_segments.csv_732FE2ACBCBF4D7B818B0DD928940778]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>frequency</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[frequency]</local-name>
+            <parent-name>[02_customer_rfm_segments.csv]</parent-name>
+            <remote-alias>frequency</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[02_customer_rfm_segments.csv_732FE2ACBCBF4D7B818B0DD928940778]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>monetary</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[monetary]</local-name>
+            <parent-name>[02_customer_rfm_segments.csv]</parent-name>
+            <remote-alias>monetary</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[02_customer_rfm_segments.csv_732FE2ACBCBF4D7B818B0DD928940778]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_item_spend</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_item_spend]</local-name>
+            <parent-name>[02_customer_rfm_segments.csv]</parent-name>
+            <remote-alias>avg_item_spend</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[02_customer_rfm_segments.csv_732FE2ACBCBF4D7B818B0DD928940778]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>r_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[r_score]</local-name>
+            <parent-name>[02_customer_rfm_segments.csv]</parent-name>
+            <remote-alias>r_score</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[02_customer_rfm_segments.csv_732FE2ACBCBF4D7B818B0DD928940778]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>f_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[f_score]</local-name>
+            <parent-name>[02_customer_rfm_segments.csv]</parent-name>
+            <remote-alias>f_score</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[02_customer_rfm_segments.csv_732FE2ACBCBF4D7B818B0DD928940778]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>m_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[m_score]</local-name>
+            <parent-name>[02_customer_rfm_segments.csv]</parent-name>
+            <remote-alias>m_score</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[02_customer_rfm_segments.csv_732FE2ACBCBF4D7B818B0DD928940778]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rfm_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rfm_code]</local-name>
+            <parent-name>[02_customer_rfm_segments.csv]</parent-name>
+            <remote-alias>rfm_code</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[02_customer_rfm_segments.csv_732FE2ACBCBF4D7B818B0DD928940778]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rfm_segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rfm_segment]</local-name>
+            <parent-name>[02_customer_rfm_segments.csv]</parent-name>
+            <remote-alias>rfm_segment</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[02_customer_rfm_segments.csv_732FE2ACBCBF4D7B818B0DD928940778]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='02_customer_rfm_segments.csv' datatype='table' name='[__tableau_internal_object_id__].[02_customer_rfm_segments.csv_732FE2ACBCBF4D7B818B0DD928940778]' role='measure' type='quantitative' />
+      <column caption='Avg Item Spend' datatype='real' name='[avg_item_spend]' role='measure' type='quantitative' />
+      <column caption='Customer City' datatype='string' name='[customer_city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Customer Unique Id' datatype='string' name='[customer_unique_id]' role='dimension' type='nominal' />
+      <column caption='F Score' datatype='integer' name='[f_score]' role='measure' type='quantitative' />
+      <column caption='First Purchase Date' datatype='datetime' name='[first_purchase_date]' role='dimension' type='ordinal' />
+      <column caption='Frequency' datatype='integer' name='[frequency]' role='measure' type='quantitative' />
+      <column caption='Last Purchase Date' datatype='datetime' name='[last_purchase_date]' role='dimension' type='ordinal' />
+      <column caption='M Score' datatype='integer' name='[m_score]' role='measure' type='quantitative' />
+      <column caption='Monetary' datatype='real' name='[monetary]' role='measure' type='quantitative' />
+      <column caption='R Score' datatype='integer' name='[r_score]' role='measure' type='quantitative' />
+      <column caption='Recency Days' datatype='integer' name='[recency_days]' role='measure' type='quantitative' />
+      <column caption='Rfm Code' datatype='integer' name='[rfm_code]' role='dimension' type='ordinal' />
+      <column caption='Rfm Segment' datatype='string' name='[rfm_segment]' role='dimension' type='nominal' />
+      <drill-paths>
+        <drill-path name='customer_state, customer_city'>
+          <field>[customer_state]</field>
+          <field>[customer_city]</field>
+        </drill-path>
+      </drill-paths>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='02_customer_rfm_segments.csv' id='02_customer_rfm_segments.csv_732FE2ACBCBF4D7B818B0DD928940778'>
+            <properties context=''>
+              <relation connection='textscan.1yics9q17fmvn815pktan02da8q3' name='02_customer_rfm_segments.csv' table='[02_customer_rfm_segments#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='customer_unique_id' ordinal='0' />
+                  <column datatype='string' name='customer_state' ordinal='1' />
+                  <column datatype='string' name='customer_city' ordinal='2' />
+                  <column datatype='datetime' name='first_purchase_date' ordinal='3' />
+                  <column datatype='datetime' name='last_purchase_date' ordinal='4' />
+                  <column datatype='integer' name='recency_days' ordinal='5' />
+                  <column datatype='integer' name='frequency' ordinal='6' />
+                  <column datatype='real' name='monetary' ordinal='7' />
+                  <column datatype='real' name='avg_item_spend' ordinal='8' />
+                  <column datatype='integer' name='r_score' ordinal='9' />
+                  <column datatype='integer' name='f_score' ordinal='10' />
+                  <column datatype='integer' name='m_score' ordinal='11' />
+                  <column datatype='integer' name='rfm_code' ordinal='12' />
+                  <column datatype='string' name='rfm_segment' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='KPI_AOV'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='01_monthly_kpi_summary' name='federated.066tv3o0wn62je1c23j1a1yzr9a9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.066tv3o0wn62je1c23j1a1yzr9a9'>
+            <column caption='Avg Order Value' datatype='real' name='[avg_order_value]' role='measure' type='quantitative' />
+            <column-instance column='[year_month_str]' derivation='None' name='[none:year_month_str:nk]' pivot='key' type='nominal' />
+            <column-instance column='[avg_order_value]' derivation='Sum' name='[sum:avg_order_value:qk]' pivot='key' type='quantitative' />
+            <column caption='Year Month Str' datatype='string' name='[year_month_str]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.066tv3o0wn62je1c23j1a1yzr9a9].[none:year_month_str:nk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#2e3b70' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.066tv3o0wn62je1c23j1a1yzr9a9].[sum:avg_order_value:qk]</rows>
+        <cols>[federated.066tv3o0wn62je1c23j1a1yzr9a9].[none:year_month_str:nk]</cols>
+      </table>
+      <simple-id uuid='{DEF2D9F4-AF9A-4856-9B8C-2D30963003C7}' />
+    </worksheet>
+    <worksheet name='KPI_Customers'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='01_monthly_kpi_summary' name='federated.066tv3o0wn62je1c23j1a1yzr9a9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.066tv3o0wn62je1c23j1a1yzr9a9'>
+            <column-instance column='[year_month_str]' derivation='None' name='[none:year_month_str:nk]' pivot='key' type='nominal' />
+            <column-instance column='[unique_customers]' derivation='Sum' name='[sum:unique_customers:qk]' pivot='key' type='quantitative' />
+            <column caption='Unique Customers' datatype='integer' name='[unique_customers]' role='measure' type='quantitative' />
+            <column caption='Year Month Str' datatype='string' name='[year_month_str]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.066tv3o0wn62je1c23j1a1yzr9a9].[none:year_month_str:nk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#2e3b70' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.066tv3o0wn62je1c23j1a1yzr9a9].[sum:unique_customers:qk]</rows>
+        <cols>[federated.066tv3o0wn62je1c23j1a1yzr9a9].[none:year_month_str:nk]</cols>
+      </table>
+      <simple-id uuid='{8C080D7C-2457-4C94-B60A-AE0004A0814D}' />
+    </worksheet>
+    <worksheet name='KPI_Orders'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='01_monthly_kpi_summary' name='federated.066tv3o0wn62je1c23j1a1yzr9a9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.066tv3o0wn62je1c23j1a1yzr9a9'>
+            <column-instance column='[year_month_str]' derivation='None' name='[none:year_month_str:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_orders]' derivation='Sum' name='[sum:total_orders:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Orders' datatype='integer' name='[total_orders]' role='measure' type='quantitative' />
+            <column caption='Year Month Str' datatype='string' name='[year_month_str]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.066tv3o0wn62je1c23j1a1yzr9a9].[none:year_month_str:nk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#2e3b70' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.066tv3o0wn62je1c23j1a1yzr9a9].[sum:total_orders:qk]</rows>
+        <cols>[federated.066tv3o0wn62je1c23j1a1yzr9a9].[none:year_month_str:nk]</cols>
+      </table>
+      <simple-id uuid='{4F1F6375-1FEE-4DCB-AAE2-9157BDAD4D15}' />
+    </worksheet>
+    <worksheet name='KPI_Revenue'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='01_monthly_kpi_summary' name='federated.066tv3o0wn62je1c23j1a1yzr9a9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.066tv3o0wn62je1c23j1a1yzr9a9'>
+            <column caption='Gross Revenue' datatype='real' name='[gross_revenue]' role='measure' type='quantitative' />
+            <column-instance column='[year_month_str]' derivation='None' name='[none:year_month_str:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gross_revenue]' derivation='Sum' name='[sum:gross_revenue:qk]' pivot='key' type='quantitative' />
+            <column caption='Year Month Str' datatype='string' name='[year_month_str]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.066tv3o0wn62je1c23j1a1yzr9a9].[none:year_month_str:nk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#2e3b70' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.066tv3o0wn62je1c23j1a1yzr9a9].[sum:gross_revenue:qk]</rows>
+        <cols>[federated.066tv3o0wn62je1c23j1a1yzr9a9].[none:year_month_str:nk]</cols>
+      </table>
+      <simple-id uuid='{0A3974F9-5877-4C4E-BC76-957865215F0B}' />
+    </worksheet>
+    <worksheet name='Revenue_by_RFM'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='02_customer_rfm_segments' name='federated.0vrfsxl1b1n77s1fdq4gb0pvfrzq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vrfsxl1b1n77s1fdq4gb0pvfrzq'>
+            <column caption='Monetary' datatype='real' name='[monetary]' role='measure' type='quantitative' />
+            <column-instance column='[rfm_segment]' derivation='None' name='[none:rfm_segment:nk]' pivot='key' type='nominal' />
+            <column caption='Rfm Segment' datatype='string' name='[rfm_segment]' role='dimension' type='nominal' />
+            <column-instance column='[monetary]' derivation='Sum' name='[sum:monetary:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0vrfsxl1b1n77s1fdq4gb0pvfrzq].[none:rfm_segment:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0vrfsxl1b1n77s1fdq4gb0pvfrzq].[sum:monetary:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0vrfsxl1b1n77s1fdq4gb0pvfrzq].[sum:monetary:qk]' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#2e3b70' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vrfsxl1b1n77s1fdq4gb0pvfrzq].[none:rfm_segment:nk]</rows>
+        <cols>[federated.0vrfsxl1b1n77s1fdq4gb0pvfrzq].[sum:monetary:qk]</cols>
+      </table>
+      <simple-id uuid='{77EDF3BD-54BD-4703-8E42-D40E862AC64A}' />
+    </worksheet>
+    <worksheet name='Sales_by_State'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='03_state_logistics_performance' name='federated.02eszqk0jefv161f7hnzn0a0njzl' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.02eszqk0jefv161f7hnzn0a0njzl'>
+            <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[customer_state]' derivation='None' name='[none:customer_state:nk]' pivot='key' type='nominal' />
+            <column caption='Product Revenue' datatype='real' name='[product_revenue]' role='measure' type='quantitative' />
+            <column-instance column='[product_revenue]' derivation='Sum' name='[sum:product_revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.02eszqk0jefv161f7hnzn0a0njzl].[Longitude (generated)]' field-type='quantitative' max='1417595.049029462' min='-12168544.13826484' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.02eszqk0jefv161f7hnzn0a0njzl].[Latitude (generated)]' field-type='quantitative' max='2655008.4515447076' min='-5028874.2831079103' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.02eszqk0jefv161f7hnzn0a0njzl].[sum:product_revenue:qk]' min='7739.4399999999996' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#d6d9e4</color>
+                <color>#bdc2d7</color>
+                <color>#a6adca</color>
+                <color>#9099bd</color>
+                <color>#7c86b0</color>
+                <color>#6975a3</color>
+                <color>#586496</color>
+                <color>#485589</color>
+                <color>#3a477c</color>
+                <color>#2e3b70</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02eszqk0jefv161f7hnzn0a0njzl].[sum:product_revenue:qk]' />
+              <text column='[federated.02eszqk0jefv161f7hnzn0a0njzl].[none:customer_state:nk]' />
+              <lod column='[federated.02eszqk0jefv161f7hnzn0a0njzl].[none:customer_state:nk]' />
+              <geometry column='[federated.02eszqk0jefv161f7hnzn0a0njzl].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02eszqk0jefv161f7hnzn0a0njzl].[Latitude (generated)]</rows>
+        <cols>[federated.02eszqk0jefv161f7hnzn0a0njzl].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{2692E71C-84D4-481C-82CE-42F2DAF09833}' />
+    </worksheet>
+    <worksheet name='State_Late_Delivery'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='03_state_logistics_performance' name='federated.02eszqk0jefv161f7hnzn0a0njzl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02eszqk0jefv161f7hnzn0a0njzl'>
+            <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Late Delivery Pct' datatype='real' name='[late_delivery_pct]' role='measure' type='quantitative' />
+            <column-instance column='[customer_state]' derivation='None' name='[none:customer_state:nk]' pivot='key' type='nominal' />
+            <column caption='Product Revenue' datatype='real' name='[product_revenue]' role='measure' type='quantitative' />
+            <column-instance column='[late_delivery_pct]' derivation='Sum' name='[sum:late_delivery_pct:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02eszqk0jefv161f7hnzn0a0njzl].[none:customer_state:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([product_revenue])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:customer_state:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.02eszqk0jefv161f7hnzn0a0njzl].[none:customer_state:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#2e3b70' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02eszqk0jefv161f7hnzn0a0njzl].[sum:late_delivery_pct:qk]</rows>
+        <cols>[federated.02eszqk0jefv161f7hnzn0a0njzl].[none:customer_state:nk]</cols>
+      </table>
+      <simple-id uuid='{C7F33251-B109-4843-9109-657692C8625A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#b8c2dc' />
+        </style-rule>
+      </style>
+      <size maxheight='786' maxwidth='1366' minheight='786' minwidth='1366' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97964' id='11' param='vert' type-v2='layout-flow' w='98828' x='586' y='1018'>
+            <zone h='5344' id='12' type-v2='title' w='98828' x='586' y='1018'>
+              <zone-style>
+                <format attr='border-color' value='#444444' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92620' id='9' type-v2='layout-basic' w='98828' x='586' y='6362' />
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#444444' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone forceUpdate='true' h='15649' id='3' type-v2='text' w='100000' x='0' y='0'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Arial Black' fontsize='16'>Olist E-Commerce Executive Performance Overview</run>
+          </formatted-text>
+          <zone-style>
+            <format attr='border-color' value='#444444' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#364374' />
+          </zone-style>
+        </zone>
+        <zone h='100127' id='4' type-v2='text' w='13909' x='-293' y='0'>
+          <zone-style>
+            <format attr='border-color' value='#444444' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#d7dfef' />
+          </zone-style>
+        </zone>
+        <zone h='33333' id='5' name='Sales_by_State' w='33309' x='39898' y='17048'>
+          <zone-style>
+            <format attr='border-color' value='#444444' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#ffffff' />
+          </zone-style>
+        </zone>
+        <zone h='9669' id='6' name='Sales_by_State' pane-specification-id='0' param='[federated.02eszqk0jefv161f7hnzn0a0njzl].[sum:product_revenue:qk]' type-v2='color' w='38067' x='37555' y='53944' />
+        <zone h='33333' id='7' name='Revenue_by_RFM' w='43558' x='35578' y='64377' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#444444' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D9281E1E-E881-4EDB-BF04-25BE26CE01BF}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='72'>
+    <window class='worksheet' name='KPI_Revenue'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{7A70ED37-9223-47F1-8A27-1B2B85FFF1FA}' />
+    </window>
+    <window class='worksheet' name='KPI_Orders'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C47414BF-0272-4D45-BA4A-1371518108E2}' />
+    </window>
+    <window class='worksheet' name='KPI_AOV'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{7B80CCC4-7EA0-4338-9660-019724D2F78F}' />
+    </window>
+    <window class='worksheet' name='KPI_Customers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{03DEF975-B1CB-4A22-ADAD-3756398DC168}' />
+    </window>
+    <window class='worksheet' name='Sales_by_State'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.02eszqk0jefv161f7hnzn0a0njzl].[sum:product_revenue:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F9237F5C-C1CF-41F6-9710-671CB233D2CF}' />
+    </window>
+    <window class='worksheet' name='Revenue_by_RFM'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{D1625A06-E536-40AF-AC29-527BA5671813}' />
+    </window>
+    <window class='worksheet' name='State_Late_Delivery'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{5E98E202-80A5-4581-B280-9E750B7EF79B}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Revenue_by_RFM'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sales_by_State'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='5' />
+      <simple-id uuid='{003361AD-908A-46DC-9EDF-F9D28CB49A54}' />
+    </window>
+  </windows>
+</workbook>
